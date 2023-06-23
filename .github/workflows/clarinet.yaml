@@ -17,7 +17,8 @@ jobs:
           verbose: true
       - name: "Export code coverage"
         uses: codecov/codecov-action@v3
-        env: CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+        env: 
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
         with:
           files: ./coverage.lcov
           verbose: true
